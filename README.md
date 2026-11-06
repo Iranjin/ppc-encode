@@ -84,6 +84,6 @@ cmake -S . -B build && cmake --build build && ctest --test-dir build
   `encode_test.cpp` checks with `static_assert`. Run the script again after you edit the list.
 - Each file in `tests/fail/` must be rejected by the encoder's compile-time checks.
 
-## Licence
+## License
 
-Private. Do not redistribute.
+[MIT](LICENSE)

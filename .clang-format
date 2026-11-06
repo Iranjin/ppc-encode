@@ -1,0 +1,46 @@
+# Matches CODE_STYLE.md. Run `make format` (or format-on-save via clangd).
+BasedOnStyle: LLVM
+Language: Cpp
+Standard: c++20
+ColumnLimit: 120
+IndentWidth: 4
+ContinuationIndentWidth: 8
+UseTab: Never
+
+BreakBeforeBraces: Attach
+AccessModifierOffset: -4
+IndentCaseLabels: false
+NamespaceIndentation: None
+FixNamespaceComments: true
+
+PointerAlignment: Left
+ReferenceAlignment: Pointer
+DerivePointerAlignment: false
+
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortLoopsOnASingleLine: true
+AllowShortBlocksOnASingleLine: Empty
+AllowShortLambdasOnASingleLine: All
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortEnumsOnASingleLine: true
+
+AlignAfterOpenBracket: Align
+AlignOperands: Align
+AlignEscapedNewlines: DontAlign
+AlignTrailingComments: false
+SpacesBeforeTrailingComments: 1
+
+BreakConstructorInitializers: BeforeColon
+ConstructorInitializerIndentWidth: 8
+PackConstructorInitializers: BinPack
+AlwaysBreakTemplateDeclarations: Yes
+
+# Include order is significant in a few places (e.g. StbTruetypeRename.hpp).
+SortIncludes: Never
+IncludeBlocks: Preserve
+ReflowComments: false
+KeepEmptyLines:
+  AtStartOfBlock: false
+MaxEmptyLinesToKeep: 1
+InsertNewlineAtEOF: true
